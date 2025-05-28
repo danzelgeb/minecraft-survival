@@ -10,7 +10,8 @@ import java.util.ArrayList;
 public class Data {
     private static final MiniMessage miniMessage = MiniMessage.miniMessage();
     @Getter
-    private static final ArrayList<String> hide = Lists.newArrayList("vulcan", "pl", "plugins", "grim", "grimac", "?", "vulcan:vulcan", "grimac:grim", "grimac:grimac", "matrix");
+    private static final ArrayList<String> hide = Lists.newArrayList("vulcan", "pl", "plugins", "grim", "grimac", "?", "vulcan:vulcan", "vulcan:alerts", "vulcan:jday", "vulcan:logs", "vulcan:punishlogs", "vulcan:verbose", "grimac:grim",
+            "grimac:grimac", "matrix");
 
     public static Component text(String text) {
         return miniMessage.deserialize(text);
